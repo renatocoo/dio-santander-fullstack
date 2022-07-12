@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-self </title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .align-container{
+            align-items: flex-end;
+        }
+
+        .items{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .start{
+            align-self: flex-start;
+        }
+
+        .end{
+            align-self: flex-end;
+        }
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+        
+        .auto{
+            align-self: auto;
+        }
+
+        .coluna{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>Row</h1>
+    <section class="container align-container">
+        <div class="items auto">AAA</div>
+        <div class="items auto">123</div>
+        <div class="items auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        <div class="items auto">Item 4</div>
+    </section>
+
+    <section class="container">
+        <div class="items center">AAA</div>
+        <div class="items start">123</div>
+        <div class="items stretch">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        <div class="items end">Item 4</div>
+    </section>
+
+    <section class="container">
+        <div class="items center">AAA</div>
+        <div class="items start">AAA</div>
+        <div class="items end">AAA</div>
+        <div class="items stretch">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    </section>
+
+    <h1>Column</h1>
+    <section class="container align-container coluna">
+        <div class="items auto">AAA</div>
+        <div class="items auto">123</div>
+        <div class="items auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        <div class="items auto">Item 4</div>
+    </section>
+
+    <section class="container coluna">
+        <div class="items center">AAA</div>
+        <div class="items start">123</div>
+        <div class="items stretch">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+        <div class="items end">Item 4</div>
+    </section>
+
+    <section class="container coluna">
+        <div class="items center">AAA</div>
+        <div class="items start">AAA</div>
+        <div class="items end">AAA</div>
+        <div class="items stretch">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+    </section>
+
+</body>
+</html>
