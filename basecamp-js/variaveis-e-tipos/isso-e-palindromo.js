@@ -1,13 +1,29 @@
-function varificaPalindromo2(string) {
-	if (!string) return;
-	if (!string.length) return;
+function palindromo(palavra) {
+    const lista = [];
+    let palavra2 = '';
+    
+    for (i = 0; i < palavra.length; i++) {
+        lista.push(palavra[i]);
+    }
+    
+    const lista2 = lista.reverse();
 
-	for (var i = 0; i < string.length / 2; i++) {
-		if (string[i] !== string[string.length - 1 - i]) {
-			return console.log(false);
-		}
-	}
-	return console.log(true);
+
+    for (i = 0; i < palavra.length; i++) {
+        palavra2 += lista2[i];
+    }
+
+
+    console.log(`Palavra: ${palavra} \nPalavra ao contrario: ${palavra2}`)
+
+
+    if (palavra == palavra2) {
+        console.log(`A palavra ${palavra} e um palindromo =)`);
+    } else {
+        console.log(`A palavra ${palavra} nao e um palindromo =(`);
+    }
 }
 
-varificaPalindromo2('romametemamor');
+
+palindromo('asa');
+palindromo('pudim');
