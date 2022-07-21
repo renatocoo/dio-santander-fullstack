@@ -1,0 +1,27 @@
+<section id="filter-by-price-container">
+  <p id="filter-by-price-title">Preço</p>
+  <div class="radio-group">
+    <input type="radio" name="radio-price" id="price-all" class="filter-by-price-item" (click)="filter(0)">
+    <label for="price-all">Todos</label>
+  </div>
+  <div class="radio-group">
+    <input type="radio" name="radio-price" id="price-50" class="filter-by-price-item" (click)="filter(50)">
+    <label for="price-50">Até R$50</label>
+  </div>
+  <div class="radio-group">
+    <input type="radio" name="radio-price" id="price-100" class="filter-by-price-item" (click)="filter(100)">
+    <label for="price-100">Até R$100</label>
+  </div>
+  <div class="radio-group">
+    <input type="radio" name="radio-price" id="price-150" class="filter-by-price-item" (click)="filter(150)">
+    <label for="price-150">Até R$150</label>
+  </div>
+  <div class="radio-group">
+    <input type="radio" name="radio-price" id="price-200" class="filter-by-price-item" (click)="filter(200)">
+    <label for="price-200">Até R$200</label>
+  </div>
+  <div class="radio-group">
+    <input type="radio" name="radio-price" id="price-200-more" class="filter-by-price-item" (click)="filter(200.01)">
+    <label for="price-200-more">Mais de R$200</label>
+  </div>
+</section>

@@ -1,0 +1,23 @@
+#filter-by-category-title{
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.checkbox-group{
+  padding: 5px;
+}
+
+.checkbox-group input:hover,
+.checkbox-group label:hover{
+  cursor: pointer;
+  color: var(--orange-100);
+}
+
+.checkbox-group input{
+  margin-right: 5px;
+}
+
+.filter-by-category-item:checked ~ label{
+  color: var(--orange-100);
+}

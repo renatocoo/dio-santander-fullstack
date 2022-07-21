@@ -1,0 +1,190 @@
+#book-detail-container{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+#book-detail-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+}
+
+#btn-back-content{
+  margin-bottom: 10px;
+}
+
+#btn-back{
+  color: var(--gray-100);
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 3px;
+  transition: all .3s;
+}
+
+#btn-back:hover{
+  color: var(--gray-50);
+}
+
+#book-detail-top-content{
+  margin-bottom: 30px;
+}
+
+#book-detail-image-content{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#book-detail-image{
+  width: 300px;
+}
+
+#book-price{
+  font-size: 2em;
+  font-weight: 500;
+  color: var(--blue-75);
+}
+
+#book-detail-btn{
+  margin-bottom: 10px;
+}
+
+#btn-add-to-cart{
+  border: 1px solid var(--gray-75);
+  color: var(--gray-75);
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: all .3s;
+}
+
+#btn-add-to-cart:hover{
+  background-color: var(--blue-75);
+  color: var(--gray-10);
+}
+
+#btn-buy-now{
+  border: 1px solid var(--gray-75);
+  background-color: var(--blue-75);
+  color: var(--gray-10);
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+#btn-buy-now:hover{
+  background-color: var(--white);
+  color: var(--gray-75);
+}
+
+#btn-add-to-cart:active,
+#btn-buy-now:active{
+  background-color: var(--orange-100);
+  color: var(--black);
+}
+
+#book-datail-description-content,
+#book-detail-details-content{
+  padding: 20px 0;
+  border-top: 2px solid var(--gray-50);
+}
+
+#description-title,
+#detail-title{
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+#description-text{
+  margin: 0;
+}
+
+#book-detail-details-content p{
+  margin-bottom: 5px;
+}
+
+#book-detail-details-content span{
+  font-weight: 500;
+}
+
+#book-not-fould{
+  height: calc(100vh - 135px);
+}
+
+#book-not-fould p{
+  font-size: 28px;
+}
+
+@media(min-width: 768px){
+  #book-detail-container{
+    padding: 10px 30px;
+  }
+
+  #book-detail-top-content{
+    display: flex;
+    justify-content: center;
+  }
+
+  #book-detail-image-content{
+    margin: 0;
+  }
+
+  #book-detail-image{
+    width: 200px;
+  }
+
+  #book-detail-btn{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #btn-add-to-cart,
+  #btn-buy-now{
+    width: 300px;
+  }
+}
+
+@media(min-width: 992px){
+
+  #book-detail-container{
+    margin-bottom: 50px;
+  }
+
+  #book-detail-image-content{
+    width: 40%;
+  }
+
+  #book-detail-name-content{
+    width: 60%;
+  }
+
+  #book-detail-top-content{
+    margin-bottom: 50px;
+  }
+
+  #book-detail-bottom-content{
+    display: flex;
+  }
+
+  #book-datail-description-content,
+  #book-detail-details-content{
+    width: 50%;
+    border: 0;
+    padding: 0;
+  }
+
+  #book-detail-details-content{
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 2px solid var(--gray-50);
+  }
+
+}

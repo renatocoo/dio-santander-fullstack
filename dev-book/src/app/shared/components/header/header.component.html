@@ -1,0 +1,17 @@
+<header>
+  <nav id="nav-container">
+    <div id="header-logo-container">
+      <a [routerLink]="['']" id="header-logo">{{ headerLogo }}</a>
+    </div>
+    <div id="header-search-container">
+      <input type="text" id="header-search-input" placeholder="Pesquisar" #searchInput (keyup.enter)="filter(searchInput.value)"/>
+      <a id="header-search-button" (click)="filter(searchInput.value)">
+        <span> <fa-icon [icon]="faSearch"></fa-icon></span>
+      </a>
+    </div>
+    <div id="header-cart-container">
+      <span> <fa-icon [icon]="faCartShopping"></fa-icon></span>
+      <p id="cart-amount">0</p>
+    </div>
+  </nav>
+</header>

@@ -1,0 +1,128 @@
+#nav-container{
+  padding: 10px;
+  background-color: var(--gray-100);
+  position: relative;
+}
+
+#header-logo-container,
+#header-search-container,
+#header-cart-container{
+  display: flex;
+}
+
+#header-logo-container{
+  margin-bottom: 10px;
+}
+
+#header-logo{
+  text-decoration: none;
+  font-family: 'Antonio', sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--gray-10);
+  transition: all .3s;
+}
+
+#header-logo:hover{
+  color: var(--orange-100);
+}
+
+#cart-amount{
+  font-size: .8em;
+  color: var(--orange-100);
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+  z-index: 5;
+}
+
+#header-search-container{
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 25px;
+  padding: 5px 15px;
+  background-color: var(--white);
+}
+
+#header-search-input{
+  width: calc(100% - 25px);
+  border: none;
+}
+
+#header-search-input:focus{
+  outline: none;
+}
+
+#header-search-button{
+  width: 25px;
+  height: 25px;
+  margin-right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--gray-50);
+  font-size: .8em;
+  transition: all .3s;
+}
+
+#header-search-button:hover{
+  background-color: var(--gray-100);
+  color: var(--gray-10);
+}
+
+#header-search-button span{
+  margin-top: -2px;
+  margin-left: -1px;
+}
+
+#header-cart-container{
+  margin-top: 8px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#header-cart-container span{
+  color: var(--gray-10);
+}
+
+@media(min-width: 768px){
+  #nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    height: 65px;
+  }
+
+  #header-logo-container,
+  #header-cart-container{
+    width: 30%;
+  }
+
+  #header-search-container{
+    width: 40%;
+  }
+
+  #header-logo-container{
+    margin: 0;
+  }
+
+  #header-search-container{
+    height: 35px;
+  }
+
+  #header-logo{
+    font-size: 1.6em;
+    margin-top: -3px;
+  }
+
+  #header-cart-container{
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,27 @@
+#filter-by-price-title{
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.radio-group{
+  padding: 5px;
+}
+
+.radio-group input:hover,
+.radio-group label:hover{
+  cursor: pointer;
+  color: var(--orange-100);
+}
+
+.radio-group input{
+  margin-right: 5px;
+}
+
+.filter-by-price-item{
+  display: none;
+}
+
+.filter-by-price-item:checked ~ label{
+  color: var(--orange-100);
+}
